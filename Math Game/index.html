@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class = "container">
+
+    <!-- <div class = "tabsContainer">
+        <button class = "activeTab">Addition</button>
+        <button class = "otherTab">Subtraction</button>
+        <button class = "otherTab">Multiplication</button>
+    </div>
+    <div id = "addition" class = "mathOperation">
+        <h2>Addition</h2>
+    </div>
+    <div id = "subtraction" class = "mathOperation" style="display:none">
+        <h2>Subtraction</h2>
+    </div>
+    <div id = "multiplication" class = "mathOperation" style="display:none">
+        <h2>Multiplication</h2>
+    </div> -->
+
+    <header>Have "Sum" Fun!</header>
+
+    <button class="modal-buttons" id="openModal">About the Game</button>
+    <div id="modal">
+        <div id="modal-textbox">
+            <h1>Learn How to Play</h1>
+            <p>The purpose of this game is to learn how add. However, we want to make it a little more challenging. When you are ready, press the "Start Game" button. The timer will begin counting downwards from 30 seconds. You start with a score of zero. Each equation you guess correctly earns you a point. Each question you respond incorrectly subtracts a point. You may enter your response in the "Your Answer" field and press enter to move onto the next question. The goal is to get to  20 points. The game will stop once you hit 20 points or if the time runs out</p>
+            <p>Good luck and have "sum" fun!</p>
+            <div id="modal-footer">
+                <button class="modal-buttons" id="close" href="#">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="timer">
+        <button id="startGame">Start Game</button>
+        <h2>Time Remaining</h2>
+        <p id="timerDisplay">00:30</p>
+    </div> -->
+
+
+
+<div>Time Remaining <span id="time">30</span> seconds!</div>
+
+
+
+    <!-- <div class = "tabClass">
+        <ul id="tabs">
+
+            <li><a id="tab1">Addition</a></li>
+            <li><a id="tab2">Subtraction</a></li>
+            <li><a id="tab3">Multiplication</a></li>
+            <li><a id="tab4">Division</a></li>
+      
+        </ul>
+            <div class="container" id="tab1C">1Some content</div>
+            <div class="container" id="tab2C">2Some content</div>
+            <div class="container" id="tab3C">3Some content</div>
+            <div class="container" id="tab4C">4Some content</div>
+                    
+    </div> -->
+
+
+        <div class = "contentContainer"> 
+            <div class = "scoreBoard"></div>
+                <h1>Score</h1>
+            <div class = "equation">
+                <div id = "equationElement1"></div>
+                <div id = "mathSymbol">+</div>
+                <div id = "equationElement2"> </div>
+            </div>
+            <div id="input-container">
+                <form>
+                    <input id="inputBox" type="text" placeholder="Your Answer" autocomplete="off"/>
+              </form>
+            </div>
+            </div>
+        </div> 
+
+    </div>
+
+    <!-- <div><iframe width="300" height="60" src="https://vocaroo.com/embed/96e8UxeFyQN" frameborder="0"></iframe><br><a href="https://voca.ro/96e8UxeFyQN" title="CountDown Music" target="music"></a></div> -->
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
