@@ -3,21 +3,23 @@
 }  */
 
 .container {
-    border: 1px solid black;
-    max-width: 100vh;
-    max-height: fit-content;
+    /* border: 1px solid black; */
+    max-width: 100vw;
+    max-height: 100vh;
     margin: auto;
-    /* background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-math-improve-class-winter-vacation-hand-drawn-chalkboard-background-image_186695.jpg); */
-    background-image: url(https://imgur.com/5Ec79xy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: turquoise
   }
   
   header {
     font-size: 100px;
     text-align: center;
-    color: darkblue;
+    color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-math-improve-class-winter-vacation-hand-drawn-chalkboard-background-image_186695.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   
   .contentContainer {
