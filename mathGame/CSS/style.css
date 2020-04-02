@@ -1,0 +1,62 @@
+/* * {
+    border: 1px solid gold;
+}  */
+
+  header {
+    font-size: 100px;
+    text-align: center;
+    color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-math-improve-class-winter-vacation-hand-drawn-chalkboard-background-image_186695.jpg);  */
+    background-image: url(https://imgur.com/Nye2JOb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  /* RESPONSIVE DESIGN */
+  
+  @media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+  }
+  
+
+  /* Style tab links */
+.tablink {
+    background-color: #3da6df;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    z-index: 15;
+  }
+  .tablink:hover {
+    background-color: #3da6df;
+  }
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100vh;
+    z-index: 15;
+  }
+  #addition {
+    background-color: #95d2ba;
+  }
+  #multiplication {
+    background-color: #1070a4;
+  }
+
+  #subtraction {
+    background-color: lightyellow
+  }
+
+  #division {
+    background-image: red;
+  }
+ 

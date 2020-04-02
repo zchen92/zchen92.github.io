@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="../mathGame/CSS/style.css">
+
+</head>
+
+<body>
+
+<header>Countless Countdown</header>
+
+<button class="tablink" onclick="openPage('addition', this, '#95d2ba')" id="defaultOpen">Addition</button>
+<button class="tablink" onclick="openPage('multiplication', this, '#1070a4')">Multiplication</button>
+<button class="tablink" onclick="openPage('subtraction', this, 'lightyellow')">Subtraction</button>
+<button class="tablink" onclick="openPage('multiplication', this, 'red')">Division</button>
+
+
+<div id="addition" class="tabcontent">
+    <iframe src="../mathGame/Games/Addition/index.html" frameborder="0"></iframe>
+</div> 
+
+<div id="multiplication" class="tabcontent">
+    <iframe src="../mathGame/Games/Multiplication/index.html" frameborder="0"></iframe>
+</div>
+
+<div id="subtraction" class="tabcontent">
+    <iframe src="../mathGame/Games/Subtraction/index.html" frameborder="0"></iframe>
+</div> 
+
+<div id="division" class="tabcontent">
+    <iframe src="..mathGame/Games/Division/index.html" frameborder="0"></iframe>
+
+</div> 
+
+
+ <footer>Thanks for playing</footer>
+
+
+    <!-- <div><iframe width="300" height="60" src="https://vocaroo.com/embed/96e8UxeFyQN" frameborder="0"></iframe><br><a href="https://voca.ro/96e8UxeFyQN" title="CountDown Music" target="music"></a></div> -->
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="../mathGame/JS/app.js"></script>
+</body>
+</html>
