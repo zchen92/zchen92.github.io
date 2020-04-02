@@ -10,33 +10,55 @@
 
 <body>
 
-<header>Countless Countdown</header>
+<header>
+    <h1>Countless Countdown</h1>
 
-<button class="tablink" onclick="openPage('addition', this, '#95d2ba')" id="defaultOpen">Addition</button>
-<button class="tablink" onclick="openPage('multiplication', this, '#1070a4')">Multiplication</button>
-<button class="tablink" onclick="openPage('subtraction', this, 'lightyellow')">Subtraction</button>
-<button class="tablink" onclick="openPage('multiplication', this, 'red')">Division</button>
+    <button class="modal-button" id="openModal">About the Game</button>
+    <div id="modal">
+        <div id="modal-textbox">
+            <h1>Learn How to Play</h1>
+            <p>The purpose of this game is to learn how add. However, we want to make it a little more challenging. When you
+                are ready, press the "Start Game" button. The timer will begin counting downwards from 30 seconds. You start
+                with a score of zero. Each equation you guess correctly earns you a point. Each question you respond
+                incorrectly subtracts a point. You may enter your response in the "Your Answer" field and press enter to
+                move onto the next question. The goal is to get to 20 points. The game will stop once you hit 20 points or
+                if the time runs out</p>
+            <p>Good luck and have "sum" fun!</p>
+            <div id="modal-footer">
+                <button class="modal-buttons" id="close" href="#">Close</button>
+            </div>
+        </div>
+    
+    </div>
+
+</header>
 
 
-<div id="addition" class="tabcontent">
+<button class="tabs" onclick="openPage('addition', this, 'blue')" id="defaultOpen">Addition</button>
+<button class="tabs" onclick="openPage('subtraction', this, 'yellow')">Subtraction</button>
+<button class="tabs" onclick="openPage('multiplication', this, 'purple')">Multiplication</button>
+<button class="tabs" onclick="openPage('division', this, 'red')">Division</button>
+
+
+<div id="addition" class="content">
     <iframe src="../mathGame/Games/Addition/index.html" frameborder="0"></iframe>
 </div> 
 
-<div id="multiplication" class="tabcontent">
-    <iframe src="../mathGame/Games/Multiplication/index.html" frameborder="0"></iframe>
-</div>
-
-<div id="subtraction" class="tabcontent">
+<div id="subtraction" class="content">
     <iframe src="../mathGame/Games/Subtraction/index.html" frameborder="0"></iframe>
 </div> 
 
-<div id="division" class="tabcontent">
+<div id="multiplication" class="content">
+    <iframe src="../mathGame/Games/Multiplication/index.html" frameborder="0"></iframe>
+</div>
+
+<div id="division" class="content">
     <iframe src="..mathGame/Games/Division/index.html" frameborder="0"></iframe>
 
 </div> 
 
 
- <footer>Thanks for playing</footer>
+<footer>Thanks for playing</footer>
 
 
     <!-- <div><iframe width="300" height="60" src="https://vocaroo.com/embed/96e8UxeFyQN" frameborder="0"></iframe><br><a href="https://voca.ro/96e8UxeFyQN" title="CountDown Music" target="music"></a></div> -->

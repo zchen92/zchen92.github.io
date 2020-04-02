@@ -66,7 +66,7 @@ const $generatesNewNumber = () => {
 $('form').on("submit", (event) => {
     event.preventDefault(); 
     let userInput = $("#inputBox").val();
-    let correctAnswer = firstRandomNumber + secondRandomNumber
+    let correctAnswer = firstRandomNumber - secondRandomNumber
     //$generatesNewNumber()
     if (parseInt(userInput,10) === correctAnswer) {  
         $("#inputBox").val(''); 
@@ -90,11 +90,11 @@ $('form').on("submit", (event) => {
 ///////   TIMER   ////////
 /////////////////////////
 const startTimer = () => {
-    let sec = 30;
+    let sec = 45;
     let timer = setInterval(function(){
         document.getElementById('timerDisplay').innerHTML=''+sec;
         sec--;
-        if (sec <= 0) {
+        if (sec < 0) {
             clearInterval(timer);
             alert("Game Over");
             $generatesNewNumber() === false

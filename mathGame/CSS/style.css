@@ -2,61 +2,117 @@
     border: 1px solid gold;
 }  */
 
-  header {
-    font-size: 100px;
-    text-align: center;
-    color: whitesmoke;
-    width: 100vw;
-    height: 100vh;
-    /* background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-math-improve-class-winter-vacation-hand-drawn-chalkboard-background-image_186695.jpg);  */
-    background-image: url(https://imgur.com/Nye2JOb.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  
-  /* RESPONSIVE DESIGN */
-  
-  @media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
-  }
-  
+body {
+  margin: 0;
+}
 
-  /* Style tab links */
-.tablink {
-    background-color: #3da6df;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-    z-index: 15;
-  }
-  .tablink:hover {
-    background-color: #3da6df;
-  }
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100vh;
-    z-index: 15;
-  }
-  #addition {
-    background-color: #95d2ba;
-  }
-  #multiplication {
-    background-color: #1070a4;
-  }
+/*header*/
 
-  #subtraction {
-    background-color: lightyellow
-  }
+header {
+  font-size: 17px;
+  text-align: center;
+  color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://imgur.com/Nye2JOb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-  #division {
-    background-image: red;
-  }
- 
+header> h1 {
+  font-size: 100px;
+  padding: 40px
+}
+
+
+/* styling modal */
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+#modal-textbox {
+  background-color: rgb(210, 228, 240);
+  height: 300px;
+  width: 550px;
+  border-radius: 2px;
+  margin: 100px auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+  line-height: 120%;
+  font: Arial;
+  text-align: center;
+}
+
+#modal-footer {
+  text-align: right;
+}
+
+h1 {
+  padding-bottom: 15px;
+}
+
+.modal-buttons {
+  padding: 14px 10px;
+  background-color: rgb(173, 203, 281);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-family: "Arial";
+  cursor: pointer;
+  font-size: 10px;
+  position: fixed;
+}
+
+
+/* Style tab links */
+.tabs {
+  background-color: #3da6df;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  z-index: 15;
+}
+.tabs:hover {
+  background-color: #3da6df;
+}
+.content {
+  border: 2px solid gold;
+  color: white;
+  display: none;
+  padding: 10px 20px;
+  height: 100vh;
+  z-index: 15;
+}
+#addition {
+  background-color: blue;
+  height: 100vh;
+  /* margin:auto */
+}
+#multiplication {
+  background-color: purple;
+}
+
+#subtraction {
+  background-color: yellow;
+}
+
+#division {
+  background-image: red;
+}
+

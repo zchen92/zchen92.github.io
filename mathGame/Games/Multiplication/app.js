@@ -5,20 +5,6 @@ console.log("hello")
 /////// GENERATE RANDOM NUMBER /////////
 ////////////////////////////////////////
 
-// let firstRandomNumber = Math.floor(Math.random()*10);
-// const $h2 = $('<h2>');
-// $("#equationElement1").append($h2);
-// $h2.append(firstRandomNumber)
-
-
-// let secondRandomNumber = Math.floor(Math.random()*(10));
-// const $anotherH2 = $('<h2>');
-// $("#equationElement2").append($anotherH2);
-// $anotherH2.append(secondRandomNumber)
-
-
-// Make it more DRY
-
 let score = 0
 
 const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`)
@@ -66,7 +52,7 @@ const $generatesNewNumber = () => {
 $('form').on("submit", (event) => {
     event.preventDefault(); 
     let userInput = $("#inputBox").val();
-    let correctAnswer = firstRandomNumber + secondRandomNumber
+    let correctAnswer = firstRandomNumber * secondRandomNumber
     //$generatesNewNumber()
     if (parseInt(userInput,10) === correctAnswer) {  
         $("#inputBox").val(''); 
@@ -90,11 +76,11 @@ $('form').on("submit", (event) => {
 ///////   TIMER   ////////
 /////////////////////////
 const startTimer = () => {
-    let sec = 30;
+    let sec = 45;
     let timer = setInterval(function(){
         document.getElementById('timerDisplay').innerHTML=''+sec;
         sec--;
-        if (sec <= 0) {
+        if (sec < 0) {
             clearInterval(timer);
             alert("Game Over");
             $generatesNewNumber() === false

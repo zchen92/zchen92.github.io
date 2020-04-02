@@ -5,24 +5,9 @@ console.log("hello")
 /////// GENERATE RANDOM NUMBER /////////
 ////////////////////////////////////////
 
-// let firstRandomNumber = Math.floor(Math.random()*10);
-// const $h2 = $('<h2>');
-// $("#equationElement1").append($h2);
-// $h2.append(firstRandomNumber)
-
-
-// let secondRandomNumber = Math.floor(Math.random()*(10));
-// const $anotherH2 = $('<h2>');
-// $("#equationElement2").append($anotherH2);
-// $anotherH2.append(secondRandomNumber)
-
-
-// Make it more DRY
-
 let score = 0
 
 const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`)
-$("<h2>").css("text-align", "center"); //doesnt work...
 $(".scoreBoard").append($cumulativeScore) 
 
 let addScore = () =>{
@@ -53,8 +38,13 @@ const $generateRandomNumber = (num) => {
 console.log($generateRandomNumber(10))
 
 const $generatesNewNumber = () => {
-    if (score === 20) {
-        alert("We have a winner!")
+    if (score === 1) {
+        alert("We have a winner!");
+        score = 0;
+        $cumulativeScore.html(`<span>${score}</span>`);
+        $("#input-container, .equation").css("display", "none")
+        clearInterval(myTimer);
+        sec = 5
     } else {
         firstRandomNumber = $generateRandomNumber(10);
         $("#newVal").text(firstRandomNumber)
@@ -89,21 +79,39 @@ $('form').on("submit", (event) => {
 //////////////////////////
 ///////   TIMER   ////////
 /////////////////////////
+let sec = 30;
+let myTimer; 
+
+
+let timer = () => {
+    document.getElementById('timerDisplay').innerHTML=''+sec;
+    sec--;
+    // if (score === 1) {
+    //     score = 0
+    //     $cumulativeScore.html(`<span>${score}</span>`)
+    //     clearInterval(timer);
+    // }
+    if (sec < 0) {
+        clearInterval(myTimer);
+        $("#input-container, .equation").css("display", "none")
+        alert("Game Over");
+        score = 0;
+        sec = 30
+        //element that holds score html and set to 0 
+        $cumulativeScore.html(`<span>${score}</span>`)
+        $generatesNewNumber()
+    }
+};
+
 const startTimer = () => {
-    let sec = 30;
-    let timer = setInterval(function(){
-        document.getElementById('timerDisplay').innerHTML=''+sec;
-        sec--;
-        if (sec <= 0) {
-            clearInterval(timer);
-            alert("Game Over");
-            $generatesNewNumber() === false
-        }
-    }, 1000);
+  
+    myTimer = setInterval(timer,1000)
+    
 } // create function with button to start timer - 1Minute/2Minutes/3M 
 
 
 const $begin = () => {
+    $("#input-container, .equation").css("display", "flex")
     startTimer();
     $generatesNewNumber()
 }
