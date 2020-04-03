@@ -1,28 +1,13 @@
 console.log("hello")
 
-
 /////////////////////////////////////////
 /////// GENERATE RANDOM NUMBER /////////
 ////////////////////////////////////////
 
-// let firstRandomNumber = Math.floor(Math.random()*10);
-// const $h2 = $('<h2>');
-// $("#equationElement1").append($h2);
-// $h2.append(firstRandomNumber)
-
-
-// let secondRandomNumber = Math.floor(Math.random()*(10));
-// const $anotherH2 = $('<h2>');
-// $("#equationElement2").append($anotherH2);
-// $anotherH2.append(secondRandomNumber)
-
-
-// Make it more DRY
 
 let score = 0
 
 const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`)
-$("<h2>").css("text-align", "center"); //doesnt work...
 $(".scoreBoard").append($cumulativeScore) 
 
 let addScore = () =>{
@@ -54,7 +39,12 @@ console.log($generateRandomNumber(10))
 
 const $generatesNewNumber = () => {
     if (score === 20) {
-        alert("We have a winner!")
+        alert("We have a winner!");
+        score = 0;
+        $cumulativeScore.html(`<span>${score}</span>`);
+        $("#input-container, .equation").css("display", "none")
+        clearInterval(myTimer);
+        sec = 45
     } else {
         firstRandomNumber = $generateRandomNumber(10);
         $("#newVal").text(firstRandomNumber)
@@ -67,7 +57,6 @@ $('form').on("submit", (event) => {
     event.preventDefault(); 
     let userInput = $("#inputBox").val();
     let correctAnswer = firstRandomNumber - secondRandomNumber
-    //$generatesNewNumber()
     if (parseInt(userInput,10) === correctAnswer) {  
         $("#inputBox").val(''); 
         addScore();
@@ -76,7 +65,6 @@ $('form').on("submit", (event) => {
     }
     $generatesNewNumber()
     $(event.currentTarget).trigger('reset'); 
-    
 });
 
 
@@ -89,21 +77,33 @@ $('form').on("submit", (event) => {
 //////////////////////////
 ///////   TIMER   ////////
 /////////////////////////
+let sec = 45;
+let myTimer; 
+
+let timer = () => {
+    document.getElementById('timerDisplay').innerHTML=''+sec;
+    sec--;
+    if (sec < 0) {
+        clearInterval(myTimer);
+        $("#input-container, .equation").css("display", "none")
+        alert("Game Over");
+        score = 0;
+        sec = 45
+        //element that holds score html and set to 0 
+        $cumulativeScore.html(`<span>${score}</span>`)
+        $generatesNewNumber()
+    }
+};
+
 const startTimer = () => {
-    let sec = 45;
-    let timer = setInterval(function(){
-        document.getElementById('timerDisplay').innerHTML=''+sec;
-        sec--;
-        if (sec < 0) {
-            clearInterval(timer);
-            alert("Game Over");
-            $generatesNewNumber() === false
-        }
-    }, 1000);
+  
+    myTimer = setInterval(timer,1000)
+    
 } // create function with button to start timer - 1Minute/2Minutes/3M 
 
 
 const $begin = () => {
+    $("#input-container, .equation").css("display", "flex")
     startTimer();
     $generatesNewNumber()
 }
@@ -111,7 +111,7 @@ const $begin = () => {
 $startGame= $('#startGame');
 $("#timer").append($startGame)
 
-    
+
 //////////////////////////
 ///////  ONLOAD   ///////
 /////////////////////////
@@ -119,22 +119,5 @@ $(() => {
 
     
     $startGame.on('click', $begin);      // need to start loop for random numbers too...
-
-    // Grabbing About the Game button
-    const $openBtn = $('#openModal');
-    const $modal = $('#modal');
-    const $closeBtn = $('#close');
-    
-    const openModal = () => {
-        $modal.css('display', 'block');
-    }
-    
-    const closeModal = () => {
-        $modal.css('display', 'none');
-    }
-    
-    $openBtn.on('click', openModal);
-    $closeBtn.on('click', closeModal)
-
 
 })

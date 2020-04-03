@@ -1,9 +1,14 @@
 console.log("hello")
 
+/////////////////////////////
+//////   VARIABLES    //////
+///////////////////////////
+
 
 /////////////////////////////////////////
 /////// GENERATE RANDOM NUMBER /////////
 ////////////////////////////////////////
+
 
 let score = 0
 
@@ -38,13 +43,13 @@ const $generateRandomNumber = (num) => {
 console.log($generateRandomNumber(10))
 
 const $generatesNewNumber = () => {
-    if (score === 1) {
+    if (score === 20) {
         alert("We have a winner!");
         score = 0;
         $cumulativeScore.html(`<span>${score}</span>`);
         $("#input-container, .equation").css("display", "none")
         clearInterval(myTimer);
-        sec = 5
+        sec = 30
     } else {
         firstRandomNumber = $generateRandomNumber(10);
         $("#newVal").text(firstRandomNumber)
@@ -57,7 +62,6 @@ $('form').on("submit", (event) => {
     event.preventDefault(); 
     let userInput = $("#inputBox").val();
     let correctAnswer = firstRandomNumber + secondRandomNumber
-    //$generatesNewNumber()
     if (parseInt(userInput,10) === correctAnswer) {  
         $("#inputBox").val(''); 
         addScore();
@@ -86,11 +90,6 @@ let myTimer;
 let timer = () => {
     document.getElementById('timerDisplay').innerHTML=''+sec;
     sec--;
-    // if (score === 1) {
-    //     score = 0
-    //     $cumulativeScore.html(`<span>${score}</span>`)
-    //     clearInterval(timer);
-    // }
     if (sec < 0) {
         clearInterval(myTimer);
         $("#input-container, .equation").css("display", "none")
@@ -107,8 +106,7 @@ const startTimer = () => {
   
     myTimer = setInterval(timer,1000)
     
-} // create function with button to start timer - 1Minute/2Minutes/3M 
-
+} 
 
 const $begin = () => {
     $("#input-container, .equation").css("display", "flex")
@@ -126,23 +124,7 @@ $("#timer").append($startGame)
 $(() => {
 
     
-    $startGame.on('click', $begin);      // need to start loop for random numbers too...
-
-    // Grabbing About the Game button
-    const $openBtn = $('#openModal');
-    const $modal = $('#modal');
-    const $closeBtn = $('#close');
-    
-    const openModal = () => {
-        $modal.css('display', 'block');
-    }
-    
-    const closeModal = () => {
-        $modal.css('display', 'none');
-    }
-    
-    $openBtn.on('click', openModal);
-    $closeBtn.on('click', closeModal)
+    $startGame.on('click', $begin);     
 
 
 })

@@ -1,19 +1,24 @@
-/* * {
-    border: 1px solid gold;
-}  */
+* {
+  margin: auto;
 
+}
 body {
   margin: 0;
+}
+
+.wrapper {
+  margin: auto;
 }
 
 /*header*/
 
 header {
   font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: whitesmoke;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   background-image: url(https://imgur.com/Nye2JOb.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,8 +88,8 @@ h1 {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 15px 15px;
+  font-size: 18px;
   width: 25%;
   z-index: 15;
 }
@@ -92,10 +97,10 @@ h1 {
   background-color: #3da6df;
 }
 .content {
-  border: 2px solid gold;
+  /* border: 2px solid gold; */
   color: white;
   display: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   height: 100vh;
   z-index: 15;
 }
@@ -105,7 +110,7 @@ h1 {
   /* margin:auto */
 }
 #multiplication {
-  background-color: purple;
+  background-color: rgb(190, 81, 190);
 }
 
 #subtraction {
@@ -116,3 +121,20 @@ h1 {
   background-image: red;
 }
 
+iframe {
+  width: 97vw;
+  height: 97vh
+}
+
+footer {
+  background-image: url(https://imgur.com/Nye2JOb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 40px;
+  font-size: 60px;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
