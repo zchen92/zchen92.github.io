@@ -11,7 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  background-color: #99ffff;
+  background-color: rgb(251, 214, 198);
 }
 
 /* TIMER */
@@ -34,7 +34,7 @@ h1 {
   text-align: center;
   color: darkblue;
   font-size: 40px;
-} 
+}
 
 /* MATH EQUATION */
 
@@ -43,14 +43,14 @@ h1 {
   margin: 5px;
   padding: 5px;
 }
-  
+
 .equation {
   /* border: 2px solid blue; */
   display: flex;
   /* background: white; */
   justify-content: space-between;
 }
-  
+
 #equationElement1 {
   /* border: 2px solid orange; */
   margin: auto;
@@ -86,7 +86,7 @@ h1 {
   left: 50%;
   top: 50%;
 }
-  
+
 #mathSymbol {
   /* border: 2px solid green; */
   margin: auto;
@@ -131,11 +131,8 @@ form {
 .equation {
   display: none;
 }
-  
-  
-/* RESPONSIVE DESIGN */
-  
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
 
-}
-  
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {}

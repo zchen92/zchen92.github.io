@@ -1,14 +1,33 @@
 console.log("hello")
 
+/////////////////////////////
+//////   VARIABLES    //////
+///////////////////////////
 
-/////////////////////////////////////////
-/////// GENERATE RANDOM NUMBER /////////
-////////////////////////////////////////
+let score = 0;
+let sec = 45;
+let myTimer; 
 
-let score = 0
+const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`);
+$(".scoreBoard").append($cumulativeScore); 
 
-const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`)
-$(".scoreBoard").append($cumulativeScore) 
+let firstRandomNumber = 0;
+const $h2 = $('<h2>').attr("id","newVal");
+$("#equationElement1").append($h2);
+$h2.append(firstRandomNumber);
+
+let secondRandomNumber= 0;
+const $anotherH2 = $('<h2>').attr("id", "secondNewVal");
+$("#equationElement2").append($anotherH2);
+$anotherH2.append(secondRandomNumber);
+
+$startGame= $('#startGame');
+$("#timer").append($startGame)
+
+
+///////////////////////////////////
+//////   SCORING  FUNCTION   /////
+/////////////////////////////////
 
 let addScore = () =>{
     score = score + 1
@@ -20,22 +39,14 @@ let minusScore = () =>{
     $cumulativeScore.html(`<span>${score}</span>`)
 }
 
-let firstRandomNumber = 0;
-const $h2 = $('<h2>').attr("id","newVal");
-$("#equationElement1").append($h2);
-$h2.append(firstRandomNumber)
-
-let secondRandomNumber= 0;
-const $anotherH2 = $('<h2>').attr("id", "secondNewVal");
-$("#equationElement2").append($anotherH2);
-$anotherH2.append(secondRandomNumber);
+/////////////////////////////////////////
+/////// GENERATE RANDOM NUMBER /////////
+////////////////////////////////////////
 
 const $generateRandomNumber = (num) => {
     let randNum = Math.floor(Math.random()*(num));
     return randNum
 }
-
-console.log($generateRandomNumber(10))
 
 const $generatesNewNumber = () => {
     if (score === 20) {
@@ -53,6 +64,10 @@ const $generatesNewNumber = () => {
     }
 }
 
+//////////////////////////////////
+/////    USER INPUT FORM    //////
+/////////////////////////////////
+
 $('form').on("submit", (event) => {
     event.preventDefault(); 
     let userInput = $("#inputBox").val();
@@ -69,17 +84,8 @@ $('form').on("submit", (event) => {
 
 
 //////////////////////////
-//////   SCORING    /////
-/////////////////////////
-
-
-
-//////////////////////////
 ///////   TIMER   ////////
 /////////////////////////
-let sec = 345;
-let myTimer; 
-
 
 let timer = () => {
     document.getElementById('timerDisplay').innerHTML=''+sec;
@@ -97,20 +103,19 @@ let timer = () => {
 };
 
 const startTimer = () => {
-  
     myTimer = setInterval(timer,1000)
-    
 } 
 
+///////////////////////////////////////
+//////   START GAME FUNCTION    //////
+/////////////////////////////////////
+
 const $begin = () => {
-    $("#input-container, .equation").css("display", "flex")
+    $("#input-container, .equation").css("display", "flex");
     startTimer();
     $generatesNewNumber()
 }
 
-$startGame= $('#startGame');
-$("#timer").append($startGame)
-    
 //////////////////////////
 ///////  ONLOAD   ///////
 /////////////////////////

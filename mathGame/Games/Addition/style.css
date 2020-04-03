@@ -1,6 +1,7 @@
 /* * {
     border: 1px solid gold;
 }  */
+
 body {
   margin: 0;
 }
@@ -10,11 +11,13 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  background-color: #99ffff;
+  background-color: rgb(224, 254, 254);
 }
 
 
 /* TIMER */
+
+
 #timer {
   /* display: flexbox; */
   position: relative;
@@ -34,7 +37,7 @@ h1 {
   text-align: center;
   color: darkblue;
   font-size: 40px;
-} 
+}
 
 /* MATH EQUATION */
 
@@ -136,5 +139,4 @@ form {
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
-}
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {}

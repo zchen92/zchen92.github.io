@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,42 +11,41 @@
 
 <body>
 
- <div class = "container">
+    <div class="container">
 
-    <div id="timer">
-        <button id="startGame">Start Game</button>
-        <h2>Time Remaining</h2>
-        <p id="timerDisplay">30 Seconds</p>
-    </div>
-
-    <div class="contentContainer">
-        <div class="scoreBoard">
-            <h1>Score</h1>
+        <div id="timer">
+            <button id="startGame">Start Game</button>
+            <h2>Time Remaining</h2>
+            <p id="timerDisplay">30 Seconds</p>
         </div>
 
-        <div class="equation">
-            <div id="equationElement1"></div>
-            <div id="mathSymbol">
-                <h3>+</h3>
+        <div class="contentContainer">
+            <div class="scoreBoard">
+                <h1>Score</h1>
             </div>
-            <div id="equationElement2"> </div>
+
+            <div class="equation">
+                <div id="equationElement1"></div>
+                <div id="mathSymbol">
+                    <h3>+</h3>
+                </div>
+                <div id="equationElement2"> </div>
+            </div>
+
+            <div id="input-container">
+                <form>
+                    <input id="inputBox" type="text" placeholder="Your Answer" autocomplete="off" />
+                </form>
+            </div>
+
         </div>
 
-        <div id="input-container">
-            <form>
-                <input id="inputBox" type="text" placeholder="Your Answer" autocomplete="off" />
-            </form>
-        </div>
-        
     </div>
     
-</div> 
     <!-- <div><iframe width="300" height="60" src="https://vocaroo.com/embed/96e8UxeFyQN" frameborder="0"></iframe><br><a href="https://voca.ro/96e8UxeFyQN" title="CountDown Music" target="music"></a></div> -->
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="../Addition/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../Addition/app.js"></script>
 </body>
+
 </html>

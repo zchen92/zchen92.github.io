@@ -1,6 +1,7 @@
 /* * {
     border: 1px solid gold;
 }  */
+
 body {
   margin: 0;
 }
@@ -10,7 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  background-color: #99ffff;
+  background-color: (255, 255, 207);
 }
 
 

@@ -1,14 +1,31 @@
 console.log("hello")
 
-/////////////////////////////////////////
-/////// GENERATE RANDOM NUMBER /////////
-////////////////////////////////////////
+/////////////////////////////
+//////   VARIABLES    //////
+///////////////////////////
+let score = 0;
+let sec = 45;
+let myTimer; 
 
+const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`);
+$(".scoreBoard").append($cumulativeScore);
 
-let score = 0
+let firstRandomNumber = 0;
+const $h2 = $('<h2>').attr("id","newVal");
+$("#equationElement1").append($h2);
+$h2.append(firstRandomNumber);
 
-const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`)
-$(".scoreBoard").append($cumulativeScore) 
+let secondRandomNumber= 0;
+const $anotherH2 = $('<h2>').attr("id", "secondNewVal");
+$("#equationElement2").append($anotherH2);
+$anotherH2.append(secondRandomNumber);
+
+$startGame= $('#startGame');
+$("#timer").append($startGame)
+
+//////////////////////////
+//////   SCORING    /////
+/////////////////////////
 
 let addScore = () =>{
     score = score + 1
@@ -20,22 +37,15 @@ let minusScore = () =>{
     $cumulativeScore.html(`<span>${score}</span>`)
 }
 
-let firstRandomNumber = 0;
-const $h2 = $('<h2>').attr("id","newVal");
-$("#equationElement1").append($h2);
-$h2.append(firstRandomNumber)
 
-let secondRandomNumber= 0;
-const $anotherH2 = $('<h2>').attr("id", "secondNewVal");
-$("#equationElement2").append($anotherH2);
-$anotherH2.append(secondRandomNumber);
+/////////////////////////////////////////
+/////// GENERATE RANDOM NUMBER /////////
+////////////////////////////////////////
 
 const $generateRandomNumber = (num) => {
     let randNum = Math.floor(Math.random()*(num));
     return randNum
 }
-
-console.log($generateRandomNumber(10))
 
 const $generatesNewNumber = () => {
     if (score === 20) {
@@ -53,6 +63,12 @@ const $generatesNewNumber = () => {
     }
 }
 
+
+//////////////////////////////////
+/////    USER INPUT FORM    //////
+/////////////////////////////////
+
+
 $('form').on("submit", (event) => {
     event.preventDefault(); 
     let userInput = $("#inputBox").val();
@@ -69,16 +85,8 @@ $('form').on("submit", (event) => {
 
 
 //////////////////////////
-//////   SCORING    /////
-/////////////////////////
-
-
-
-//////////////////////////
 ///////   TIMER   ////////
 /////////////////////////
-let sec = 45;
-let myTimer; 
 
 let timer = () => {
     document.getElementById('timerDisplay').innerHTML=''+sec;
@@ -96,11 +104,13 @@ let timer = () => {
 };
 
 const startTimer = () => {
-  
     myTimer = setInterval(timer,1000)
-    
-} // create function with button to start timer - 1Minute/2Minutes/3M 
+} 
 
+
+///////////////////////////////////////
+//////   START GAME FUNCTION    //////
+/////////////////////////////////////
 
 const $begin = () => {
     $("#input-container, .equation").css("display", "flex")
@@ -108,16 +118,13 @@ const $begin = () => {
     $generatesNewNumber()
 }
 
-$startGame= $('#startGame');
-$("#timer").append($startGame)
-
-
 //////////////////////////
 ///////  ONLOAD   ///////
 /////////////////////////
 $(() => {
 
     
-    $startGame.on('click', $begin);      // need to start loop for random numbers too...
+    $startGame.on('click', $begin);     
+
 
 })
