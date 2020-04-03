@@ -5,7 +5,7 @@ console.log("hello")
 ///////////////////////////
 
 let score = 0;
-let sec = 60;
+let sec = 60;           // timer for division game is 60 seconds 
 let myTimer;
 
 const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`);
@@ -43,12 +43,12 @@ let minusScore = () => {
 ////////////////////////////////////////
 
 const $generateRandomNumber = (num) => {
-    let randNum = Math.floor(Math.random() * (num));
+    let randNum = Math.floor(Math.random() * (num)); // generates a random number (between 0 - num)
     return randNum
 }
 
 const $generateSecondNumber = (min, max) => {
-    let secondNum = Math.floor(Math.random() * (max - min) + min);
+    let secondNum = Math.floor(Math.random() * (max - min) + min); // generates a new number between certain values, did this avoid dividing by zero 
     return secondNum
 }
 
@@ -78,7 +78,7 @@ $('form').on("submit", (event) => {
     let userInput = $("#inputBox").val();
     let correctAnswer = firstRandomNumber / secondRandomNumber
     //$generatesNewNumber()
-    if (eval(userInput, 10) === correctAnswer) {
+    if (eval(userInput, 10) === correctAnswer) {        // changed from parse to eval so response can be a string, this way response can be fractions/decimals w/o getting incorrect answer
         $("#inputBox").val('');
         addScore();
     } else {
@@ -103,7 +103,6 @@ let timer = () => {
         alert("Game Over");
         score = 0;
         sec = 60;
-        //element that holds score html and set to 0 
         $cumulativeScore.html(`<span>${score}</span>`);
         $generatesNewNumber()
     }

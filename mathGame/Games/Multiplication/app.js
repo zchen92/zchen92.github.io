@@ -5,7 +5,7 @@ console.log("hello")
 ///////////////////////////
 
 let score = 0;
-let sec = 45;
+let sec = 45;           // timer for multiplication game is also 45 seconds 
 let myTimer; 
 
 const $cumulativeScore = $("<h2>").html(`<span>${score}</span>`);
@@ -96,7 +96,6 @@ let timer = () => {
         alert("Game Over");
         score = 0;
         sec = 45;
-        //element that holds score html and set to 0 
         $cumulativeScore.html(`<span>${score}</span>`);
         $generatesNewNumber()
     }
