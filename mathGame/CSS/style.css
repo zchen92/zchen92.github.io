@@ -27,9 +27,8 @@ header {
 
 header> h1 {
   font-size: 100px;
-  padding: 40px
+  padding: 80px
 }
-
 
 /* styling modal */
 
@@ -46,43 +45,46 @@ header> h1 {
 }
 
 #modal-textbox {
-  background-color: rgb(210, 228, 240);
+  background-color: rgb(200, 223, 238);
   height: 300px;
   width: 550px;
   border-radius: 2px;
   margin: 100px auto;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   padding: 2%;
-  line-height: 120%;
-  font: Arial;
+  line-height: 130%;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  color: whitesmoke;
 }
 
 #modal-footer {
-  text-align: right;
+  text-align: center;
 }
 
-h1 {
+#modal-textbox > h1 {
   padding-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.modal-buttons {
+header >.modal-button {
   padding: 14px 10px;
   background-color: rgb(173, 203, 281);
   border: none;
   outline: none;
   border-radius: 3px;
   color: white;
-  font-family: "Arial";
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   font-size: 10px;
-  position: fixed;
+  background-position: left;
+  margin: 10px;
 }
 
 
 /* Style tab links */
 .tabs {
-  background-color: #3da6df;
+  background-color: #579ae7;
   color: white;
   float: left;
   border: none;
@@ -90,11 +92,12 @@ h1 {
   cursor: pointer;
   padding: 15px 15px;
   font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
   width: 25%;
   z-index: 15;
 }
 .tabs:hover {
-  background-color: #3da6df;
+  background-color: #0d95df;
 }
 .content {
   /* border: 2px solid gold; */
@@ -105,25 +108,24 @@ h1 {
   z-index: 15;
 }
 #addition {
-  background-color: blue;
-  height: 100vh;
-  /* margin:auto */
-}
-#multiplication {
-  background-color: rgb(190, 81, 190);
+  background-color: rgb(161, 201, 241);
 }
 
 #subtraction {
-  background-color: yellow;
+  background-color: rgb(254, 107, 100);
+}
+
+#multiplication {
+  background-color: rgb(253, 253, 152);
 }
 
 #division {
-  background-image: red;
+  background-color:rgb(255, 185, 179);
 }
 
 iframe {
   width: 97vw;
-  height: 97vh
+  height: 97vh;
 }
 
 footer {
