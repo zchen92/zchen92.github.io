@@ -22,12 +22,14 @@ body {
   text-align: center;
   color: darkblue;
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*SCOREBOARD*/
 
 .scoreBoard {
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .scoreBoard,
@@ -35,6 +37,7 @@ h1 {
   text-align: center;
   color: darkblue;
   font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 } 
 
 /* MATH EQUATION */
@@ -52,7 +55,7 @@ h1 {
   justify-content: space-between;
 }
 
-#equationElement1 {
+#equationElement1, #equationElement2 {
   /* border: 2px solid orange; */
   margin: auto;
   /* background: white; */
@@ -62,30 +65,14 @@ h1 {
   font-size: 80px;
   text-align: center;
   color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#newVal {
+#newVal, #secondNewVal {
   margin: 0;
   left: 50%;
   top: 50%;
-}
-
-#equationElement2 {
-  /* border: 2px solid orange; */
-  margin: auto;
-  /* background: white; */
-  height: 200px;
-  width: 200px;
-  justify-content: space-around;
-  font-size: 80px;
-  text-align: center;
-  color: darkblue;
-}
-
-#secondNewVal {
-  margin: 0;
-  left: 50%;
-  top: 50%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #mathSymbol {
@@ -98,6 +85,7 @@ h1 {
   font-size: 100px;
   text-align: center;
   color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #mathSymbol,
@@ -105,6 +93,7 @@ h3 {
   margin: 0;
   left: 50%;
   right: 50%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
