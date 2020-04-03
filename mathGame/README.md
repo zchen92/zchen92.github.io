@@ -1,6 +1,6 @@
 # Countless Countdown
 
-![](../Images/Untitled%20design.png)
+![](/Users/zoe/Documents/GitHub/zchen92.github.io/mathGame/Images/Untitled design.png)
 
 ## Concept 
 
