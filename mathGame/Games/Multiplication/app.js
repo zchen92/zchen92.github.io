@@ -53,13 +53,13 @@ const $generatesNewNumber = () => {
         alert("We have a winner!");
         score = 0;
         $cumulativeScore.html(`<span>${score}</span>`);
-        $("#input-container, .equation").css("display", "none")
+        $("#input-container, .equation").css("display", "none");
         clearInterval(myTimer);
         sec = 45
     } else {
         firstRandomNumber = $generateRandomNumber(10);
-        $("#newVal").text(firstRandomNumber)
-        secondRandomNumber = $generateRandomNumber(10)
+        $("#newVal").text(firstRandomNumber);
+        secondRandomNumber = $generateRandomNumber(10);
         $("#secondNewVal").text(secondRandomNumber)
     }
 }
@@ -78,7 +78,7 @@ $('form').on("submit", (event) => {
     } else {
         minusScore();
     }
-    $generatesNewNumber()
+    $generatesNewNumber();
     $(event.currentTarget).trigger('reset'); 
 });
 
@@ -95,9 +95,9 @@ let timer = () => {
         $("#input-container, .equation").css("display", "none")
         alert("Game Over");
         score = 0;
-        sec = 45
+        sec = 45;
         //element that holds score html and set to 0 
-        $cumulativeScore.html(`<span>${score}</span>`)
+        $cumulativeScore.html(`<span>${score}</span>`);
         $generatesNewNumber()
     }
 };
