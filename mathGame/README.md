@@ -134,12 +134,11 @@ For the **division** game- I increased the users time complete the game to 60 se
 ### Creating Tabs
 * Creating the different tabs was very challenging as I initially tried to put all the code for each tab under each section. This became a very large JS file with very similar code in each section. I was able to break it apart by putting each game into a separate iFrame. 
 
+### Image path
+* I tried to add all my images into one folder to keep the sources more organized. However, my `README` was not able to recognize it unless all the images were on the same level a my index.html.
 
 ### Timing restraints 
 * I ran out of time to add sound to the game once the clock starts and to complete the responsive design.
-
-### Image path
-* I tried to add all my images into one folder to keep the sources more organized. However, my `README` was not able to recognize it unless all the images were on the same level a my index.html.
 
 ## App Demo 
 Please take a look at my project 
