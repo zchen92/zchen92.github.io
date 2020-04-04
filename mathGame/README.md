@@ -4,7 +4,7 @@
 
 ## Concept 
 
-Countless Countdown is a game that challenges users to practice their basic math knowledge in a competitive yet fun manner. This game is designed to increase in difficulty with each basic math operation. However, user will also have more time to solve each problem as the game becomes more difficult. The user must reach 20 points before the time runs out. 
+Countless Countdown is a game that challenges users to practice their basic math knowledge in a competitive yet fun manner. This game is designed to increase in difficulty with each basic math operation. However, user will also have more time to solve each problem as the math becomes more difficult. The user must reach 20 points before the time runs out. 
 
 ## Technologies used
 1. HTML
@@ -122,7 +122,7 @@ For the **division** game- I increased the users time complete the game to 60 se
 <img src="wireframe2.png" alt="wireframe2" width="250px" height="300px">
 <img src="wireframe3.jpg" alt="wireframe3" width="250px" height="300px">
 
-* I initially tried to add images of apples to make the game more "kids friendly". The idea was to have the user get two images of apples, and find the solution from an array of three images. However, this game had many flaws:
+* I initially tried to add images of apples to make the game more "child-friendly". The idea was to have the user get two images of apples, and find the solution from an array of three images. However, this game had many flaws:
 1. Based on the set time the user was given to complete each game, it would be difficult to count all the apples in each image quickly.
 
 <img src="apples.png" alt="apples" width="300px" height="350px">
@@ -131,14 +131,21 @@ For the **division** game- I increased the users time complete the game to 60 se
 
 3. This game would be difficult to scale as the images were based on an an image array that would need to constantly grow with additional math operations. It would also be very difficult for users with fraction/decimal responses and answers that were larger than 20 if the game were to be expanded further. 
 
+Ultimately, I changed the game from a child-friendly game, to a more stimulating game that brings out a competitive spirit within the user. 
+
 ### Creating Tabs
 * Creating the different tabs was very challenging as I initially tried to put all the code for each tab under each section. This became a very large JS file with very similar code in each section. I was able to break it apart by putting each game into a separate iFrame. 
 
 ### Image path
 * I tried to add all my images into one folder to keep the sources more organized. However, my `README` was not able to recognize it unless all the images were on the same level a my index.html.
 
-### Timing restraints 
-* I ran out of time to add sound to the game once the clock starts and to complete the responsive design.
+## Future Goals:
+
+* Add sound to the game once the clock start counting. However, I did notice the timer itself was already anxiety inducing so the sound clips I chose made would have made the more frustrating. 
+
+* Responsive design - I would want this to be a simple app game for an ipad/phone. I was debating if I should add the submit button back onto the screen if the screen is touchable rather than playing with a keyboard. 
+
+* Making a fifth screen that alternates between all four math operations. 
 
 ## App Demo 
 Please take a look at my project 
