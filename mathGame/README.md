@@ -90,16 +90,16 @@ If the response was incorrect, the score would subtract 1 fom the initial score.
 
 The random numbers will regenerate until the time either runs out (alerting user the game is over) or until the user reaches 20 points (alerting user they have won). Once the game is either won or lost, the input option is hidden, to prevent th user from continuing the game. The user must then continue by hitting the "start game" button again. 
 
-![beforeStart](additionInitial.png)
 
- ![addition](Addition.png)
+<img src="addititionInitial.png" alt="start screen" width="500px" height="450px">;
+ <img src="Addition.png" alt="addition" width="500px" height="450px">
 
  #### Step 4 - Creating other mini games
 
 For the **subtraction** and **multiplication** games - The concept and code for the each game is overall the same. However, I did increased the users time to complete the game from 30 seconds to 45 seconds as these operations can be more challenging. 
 
-<img src="subtraction.png" alt="subtraction" width="600px" height="600px">;
-<img src="multiplication.png" alt="multiplication" width="600px" height="600px">
+<img src="subtraction.png" alt="subtraction" width="500px" height="450px">;
+<img src="multiplication.png" alt="multiplication" width="500px" height="450px">
 
 
 For the **division** game- I increased the users time complete the game to 60 seconds. I also changed the random number generator function so that the second number generated cannot be a 0, as to avoid "error" in division.
@@ -119,13 +119,13 @@ For the **division** game- I increased the users time complete the game to 60 se
 ## Challenges
 ### First attempt
 
-<img src="wireframe.png" alt="wireframe1" width="300px" height="300px">;
-<img src="wireframe2.png" alt="wireframe2" width="300px" height="300px">;
-<img src="wireframe3.jpg" alt="wireframe3" width="300px" height="300px">
+<img src="wireframe.png" alt="wireframe1" width="250px" height="300px">;
+<img src="wireframe2.png" alt="wireframe2" width="250px" height="300px">;
+<img src="wireframe3.jpg" alt="wireframe3" width="250px" height="300px">
 
 * I initially tried to add images of apples to make the game more kid friendly. The idea was to have the user get two images of apples, and find the solution from an array of three images. However, I realized based on the time I was giving the user, it would be difficult to count all the apples quickly. Additionally, based on the screen size, it would be hard to get all the images into one row. 
 
-<img src="apples.png" alt="apples" width="500px" height="500px">
+<img src="apples.png" alt="apples" width="400px" height="450px">
 
 Lastly, this would have only been applicable to the array of images I had used, and could not further expand into other math operations/problems. 
 
