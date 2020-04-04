@@ -122,7 +122,7 @@ For the **division** game- I increased the users time complete the game to 60 se
 <img src="wireframe2.png" alt="wireframe2" width="250px" height="300px">
 <img src="wireframe3.jpg" alt="wireframe3" width="250px" height="300px">
 
-* I initially tried to add images of apples to make the game more "child-friendly". The idea was to have the user get two images of apples, and find the solution from an array of three images. However, this game had many flaws:
+I initially tried to add images of apples to make the game more "child-friendly". The idea was to have the user get two images of apples, and find the solution from an array of three images. However, this game had many flaws:
 1. Based on the set time the user was given to complete each game, it would be difficult to count all the apples in each image quickly.
 
 <img src="apples.png" alt="apples" width="300px" height="350px">
