@@ -92,7 +92,7 @@ The random numbers will regenerate until the time either runs out (alerting user
 
 ![beforeStart](additionInitial.png)
 
- ![addition](additionPage.png)
+ ![addition](Addition.png)
 
  #### Step 4 - Creating other mini games
 
