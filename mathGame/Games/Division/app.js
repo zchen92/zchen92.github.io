@@ -64,7 +64,7 @@ const $generatesNewNumber = () => {
         firstRandomNumber = $generateRandomNumber(10);
         $("#newVal").text(firstRandomNumber);
         secondRandomNumber = $generateSecondNumber(2,10);
-        $("#secondNewVal").text(secondRandomNumber)
+        $("#secondNewVal").text(secondNum)
     }
 }
 
