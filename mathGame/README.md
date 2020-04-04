@@ -1,5 +1,9 @@
 # Countless Countdown
 
+<<<<<<< HEAD
+=======
+![heading logo](/mathGame/Images/clockImage.png)
+>>>>>>> c141fe17d91fa5a65e419b90081fea6c696d3ee5
 
 ## Concept 
 
