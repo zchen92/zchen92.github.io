@@ -17,19 +17,30 @@ Countless Countdown is a game that challenges users to practice their basic math
 
 ![wireframe](wireframe4.png)
 
-Once I finalized on my idea, I created the HTMl with the different div classes for each element I wanted on the page). I created four tabs for each math operation, in addition to the main header and footer image. There is also a modal that allows user to learn the game rules. I placed each game into an iFrame to break up my code. I started my game with the Addition problem. I created a button for the user to start the game, which triggers the timer to start and two random numbers to generate, using javascript and jquery functions. The game score is initially set to zero. The user is able to put their response into the input option and submit using the "enter" button. I initially had a submit button but realized this would be too time consuming for the user if they had to move their mouse with each submission. Once the response is submitted, there is a function to determine if the response if correct or incorrect. If the response was correct, the score would add one to the base score of 0. If the response was incorrect, the score would subtract 1 fom the initial score. The numbers would regenerate until the time either runs out (alerting user the game is over) or until the user reaches 20 points (alerting user they won). Once the game is either won or lost, the input option is hidden, to prevent th user from continuing the game. The user must then continue by hitting the "start game" button again. 
+Once I finalized on my idea, I created the HTMl with the different div classes for each element I wanted on the page. I created four tabs for each math operation, in addition to the main header and footer image. There is also a modal that allows user to learn the game rules.
 
-For the subtraction and multiplication tab - I increased the users time to complete the game from 30 seconds to 45 seconds to complete the game as these operations can be more challenging. 
+![modal](modal.png)
+
+ I placed each game into an iFrame to break up my code. I started my game with the "Addition" problem. I created a button for the user to start the game, which triggers the timer to start and two random numbers to generate, using javascript and jquery functions. The game score is initially set to zero. The user is able to put their response into the input form and submit using the "enter" button. I initially had a submit button but realized this would be too time consuming for the user if they had to move their mouse with each submission. Once the response is submitted, there is a function to determine if the response if correct or incorrect. If the response was correct, the score would add one to the base score of 0. If the response was incorrect, the score would subtract 1 fom the initial score. The numbers would regenerate until the time either runs out (alerting user the game is over) or until the user reaches 20 points (alerting user they won). Once the game is either won or lost, the input option is hidden, to prevent th user from continuing the game. The user must then continue by hitting the "start game" button again. 
+
+ ![addition](additionPage.png)
+
+For the subtraction and multiplication tab - The concept for the game is overall the same. However, I increased the users time to complete the game from 30 seconds to 45 seconds to complete the game as these operations can be more challenging. 
+
+![subtraction](subtraction.png)
+![multiplication](multiplication.png)
 
 For the division tab - I increased the users time complete the game to 60 seconds. I also changed the random number generator function so that the second number generated cannot be a 0, as to avoid "error" in division. Lastly, instead of parsing the integers, I used the "eval" option so that the user is able to submit fractions and decimals without the response being incorrect. 
+
+![division](division.png)
 
 
 ## Challenges
 ### First attempt
 
-![wireframe](wireframe.png)
-![secondWireframe](wireframe2.png)
-![thirdWireframe](wireframe3.png)
+![wireframe](wireframe.png 30x30)
+![secondWireframe](wireframe2.png 30x30)
+![thirdWireframe](wireframe3.jpg 30x30)
 
 * I initially tried to add images of apples to make the game more kid friendly. The idea was to have the user get two images of apples, and find the solution from an array of three images. However, I realized based on the time I was giving the user, it would be difficult to count all the apples quickly. Additionally, based on the screen size, it would be hard to get all the images into one row. 
 
