@@ -1,6 +1,6 @@
 # Countless Countdown
 
-![heading logo](/Users/zoe/Documents/GitHub/zchen92.github.io/mathGame/Images/Untitled%20design.png)
+![heading logo](/mathGame/Images/clockImage.png)
 
 ## Concept 
 
