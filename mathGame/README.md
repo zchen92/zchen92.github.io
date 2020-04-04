@@ -118,7 +118,7 @@ For the **division** game- I increased the users time complete the game to 60 se
 ## Challenges
 ### First attempt
 
-![wireframe](wireframe.png)
+<img src="wireframe.png" alt="wireframe1" width="50px" height="50px">
 ![secondWireframe](wireframe2.png)
 ![thirdWireframe](wireframe3.jpg)
 
