@@ -143,9 +143,11 @@ Ultimately, I changed the game from a child-friendly game, to a more stimulating
 
 * Add sound to the game once the clock start counting. However, I did notice the timer itself was already anxiety inducing so the sound clips I chose made would have made the more frustrating. 
 
-* Responsive design - I would want this to be a simple app game for an ipad/phone. I was debating if I should add the submit button back onto the screen if the screen is touchable rather than playing with a keyboard. 
+* Responsive design - I would want this to be a simple app game for an tablet/smartphone. I was debating if I should add the submit button back onto the screen if the screen is touchable rather than playing with a keyboard. 
 
 * Making a fifth screen that alternates between all four math operations. 
+
+* Adding a fun pop up image when the user wins or loses instead of just an alert
 
 ## App Demo 
 Please take a look at my project 
