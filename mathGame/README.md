@@ -28,6 +28,8 @@ For the division tab - I increased the users time complete the game to 60 second
 
 * Creating the different tabs was very challenging as I initially tried to put all the code for each tab under each section. This became a very large JS file with very similar code in each section. I was able to break it apart by putting each game into a separate iFrame. 
 
+* I ran out of time to add sound to the game once the clock starts and to complete the responsive design.
+
 ## Additional information
 
 ## App Demo 
