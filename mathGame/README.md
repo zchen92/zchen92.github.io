@@ -91,7 +91,7 @@ If the response was incorrect, the score would subtract 1 fom the initial score.
 The random numbers will regenerate until the time either runs out (alerting user the game is over) or until the user reaches 20 points (alerting user they have won). Once the game is either won or lost, the input option is hidden, to prevent th user from continuing the game. The user must then continue by hitting the "start game" button again. 
 
 
-<img src="addititionInitial.png" alt="start screen" width="400px" height="300px">
+<img src="additionInitial.png" alt="start screen" width="400px" height="300px">
 <img src="Addition.png" alt="addition" width="400px" height="300px">
 
  #### Step 4 - Creating other mini games
