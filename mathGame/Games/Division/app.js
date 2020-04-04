@@ -63,7 +63,7 @@ const $generatesNewNumber = () => {
     } else {
         firstRandomNumber = $generateRandomNumber(10);
         $("#newVal").text(firstRandomNumber);
-        secondRandomNumber = $generateRandomNumber(1,10);
+        secondRandomNumber = $generateRandomNumber(10,1);
         $("#secondNewVal").text(secondRandomNumber)
     }
 }
