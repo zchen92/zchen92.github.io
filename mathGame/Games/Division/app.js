@@ -48,7 +48,7 @@ const $generateRandomNumber = (num) => {
 }
 
 const $generateSecondNumber = (min, max) => {
-    let secondNum = Math.floor(Math.random() * ((max - min + 1) + min)); // generates a new number between certain values, did this avoid dividing by zero 
+    let secondNum = Math.floor(Math.random() * (max - min + 1) + min); // generates a new number between certain values, did this avoid dividing by zero 
     // if (secondNum === 0) {
     //     $generateRandomNumber
     // }
